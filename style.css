@@ -1,7 +1,5 @@
 :root {
-  --primary-color: #d4ddef;
-  --primary-color: #b9dcff;
-  --primary-color: #1a62ab;
+  --primary-color: #658;
 }
 
 * {
@@ -171,7 +169,7 @@ header {
   margin-right: 1rem;
   margin-bottom: 0rem;
   z-index: 200;
-  border-radius: 50%;
+  border-radius: 8px;
   height: 140px;
   width: 140px;
   backdrop-filter: blur(5px);
@@ -179,7 +177,7 @@ header {
   box-shadow: 10px 5px 14px #0004;
 
   /* background-image: url('./img/avatarShot2.png'); */
-  background: url('./img/avatarShot2.png');
+  background: url('./img/avatarShot2.jpeg');
   /* background-repeat: no-repeat; */
   background-size: 103%;
 }

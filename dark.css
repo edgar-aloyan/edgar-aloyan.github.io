@@ -1,5 +1,6 @@
 :root {
   --primary-color: rgb(111, 156, 208);
+  --primary-color: #98c;
 }
 
 * {
@@ -32,11 +33,15 @@ hr {
 
 .education h5 {
   color: var(--primary-color);
-  opacity: 0.8;
 }
 .experience-name:after,
 .education h5:after {
   display: none;
+}
+
+.education h6 {
+  color: unset;
+  opacity: 0.9;
 }
 
 .ln-svg,
