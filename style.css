@@ -43,12 +43,20 @@ html {
   background: #fff;
   margin: 9em 0em 18em 0em;
   /*  */
-  width: 56.5rem;
+  width: 57rem;
   aspect-ratio: 1 / 1.4;
 
   /* box-shadow: 20px 13px 30px #0002; */
 
   position: relative;
+}
+.a4::after {
+  content: 'Designed by Vahan Sahakyan';
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #aaa;
 }
 
 .ln-svg,
