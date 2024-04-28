@@ -64,16 +64,11 @@ const screenshotMode = (function () {
       return console.error(new UsageError(enable, 'boolean'));
     if (enable && !enabled) {
       enabled = !enabled;
-      togglePdfMode(true);
+      // togglePdfMode(true);
       rotate(3);
     } else if (!enable && enabled) {
       enabled = !enabled;
-      togglePdfMode(false);
       rotate(1);
-    } else if (!enable) {
-      togglePdfMode(false);
-    } else if (enable) {
-      togglePdfMode(true);
     }
     return 0;
   };
@@ -102,3 +97,4 @@ window.actions = {
   togglePdfMode,
   rotate,
 };
+togglePdfMode();

@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="./favicon_blue.png" />
+    <link rel="stylesheet" href="./icons/fa6_1_1/css/all.min.css" />
     <script defer src="./script.js"></script>
     <title>Curriculum Vitae | Edgar Aloyan</title>
   </head>
@@ -61,9 +62,21 @@
                 <div class="avatar" />
               </header>
               <section class="pdf-mode-contacts">
-                <div>https://linkedin.com/in/edgar-aloyan</div>
-                <div>aloyan93@gmail.com</div>
-                <div>+374 55 42 62 95</div>
+                <div
+                  class="pdf-mode-contacts__row cursor-pointer"
+                  onclick="window.open(this.textContent)"
+                >
+                  <i class="fa-solid fa-link-simple fa-xs"></i>
+                  <div>https://linkedin.com/in/edgar-aloyan</div>
+                </div>
+                <div class="pdf-mode-contacts__row">
+                  <i class="fa-regular fa-envelope"></i>
+                  <div>aloyan93@gmail.com</div>
+                </div>
+                <div class="pdf-mode-contacts__row">
+                  <i class="fa-regular fa-phone"></i>
+                  <div>+374 55 42 62 95</div>
+                </div>
               </section>
               <div class="content-wrapper">
                 <aside>
