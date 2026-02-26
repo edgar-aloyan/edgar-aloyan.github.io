@@ -7,18 +7,6 @@ init();
 
 onThemeChange(updateTheme);
 
-///////////////////////
-// PDF MODE
-
-const togglePdfMode = (function () {
-  let pdfMode = false;
-  return function (enable = undefined) {
-    document.getElementById('pdf-mode-css').disabled =
-      enable !== undefined ? !enable : pdfMode;
-    pdfMode = enable ?? !pdfMode;
-  };
-})();
-
 const rotate = (function () {
   let degree = 0;
   return function (times = 1) {
@@ -94,7 +82,5 @@ class UsageError extends Error {
 
 window.actions = {
   screenshotMode,
-  togglePdfMode,
   rotate,
 };
-togglePdfMode();
