@@ -22,6 +22,21 @@
     <link rel="stylesheet" href="../icons/fa6_1_1/css/all.min.css" />
     <script defer src="../script.js"></script>
     <title>Curriculum Vitae | Avetis Chabyan</title>
+    <style>
+      .avatar-avetis {
+        margin-right: 1rem;
+        z-index: 200;
+        border-radius: 8px;
+        height: 140px;
+        width: 140px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        box-shadow: 10px 5px 14px #0004;
+        background: url('./avatar.jpg');
+        background-size: cover;
+        background-position: center top;
+      }
+    </style>
   </head>
   <body>
     <div class="cover">
@@ -36,8 +51,9 @@
                     AVETIS
                     <span>CHABYAN</span>
                   </h1>
-                  <h4 class="profession">Mining Infrastructure & Embedded Systems Engineer</h4>
+                  <h4 class="profession">Senior DevSecOps & Embedded Systems Engineer</h4>
                 </div>
+                <div class="avatar-avetis"></div>
               </header>
               <section class="pdf-mode-contacts">
                 <div class="pdf-mode-contacts__row">
@@ -58,19 +74,18 @@
                   <div class="skills">
                     <h2>SKILLS</h2>
                     <ul>
-                      <li>Bitcoin ASIC Miners (Antminer Series)</li>
-                      <li>Custom Firmware Development</li>
-                      <li>Mining Farm Monitoring & Optimization</li>
+                      <li>Payment Processing, KYC/AML, Transactions</li>
+                      <li>Cybersecurity, Vulnerability Assessment</li>
+                      <li>C/C++, Bash, JavaScript, Python</li>
                       <li>ARM64/ARM32 (Zynq, Amlogic A113D)</li>
-                      <li>Linux Kernel Development & Customization</li>
-                      <li>Device Tree Configuration</li>
-                      <li>PetaLinux / Yocto / Buildroot</li>
+                      <li>Linux Kernel Development &amp; Customization</li>
+                      <li>Device Tree, PetaLinux, Yocto, Buildroot</li>
                       <li>Bootloader Development (U-Boot)</li>
-                      <li>C/C++, Bash, JavaScript</li>
-                      <li>I2C, SPI, UART, PMBus, TCP/IP, WebSocket, JTAG</li>
-                      <li>PCB Design (single/multi-layer)</li>
-                      <li>GCC, PlatformIO, Vivado, EasyEDA</li>
+                      <li>I2C, SPI, UART, PMBus, TCP/IP, WebSocket</li>
+                      <li>PCB Design (single/multi-layer), EasyEDA</li>
+                      <li>Docker, GCC, PlatformIO, Vivado, JTAG</li>
                       <li>Metasploit, Nmap, Burp Suite</li>
+                      <li>Real-time Monitoring Systems</li>
                     </ul>
                   </div>
 
@@ -100,15 +115,14 @@
                     <!-- ABOUT START -->
                     <h2>ABOUT</h2>
                     <p>
-                      Highly qualified engineer with extensive experience in
-                      cryptocurrency mining infrastructure, embedded systems
-                      development and Linux kernel programming.
-                      <br />&bull;&nbsp; Specializing in Bitcoin ASIC miner
-                      optimization, custom firmware development and large-scale
-                      mining farm monitoring solutions.
-                      <br />&bull;&nbsp; Proven track record in designing and
-                      implementing complex mining management systems with
-                      multi-firmware support and enterprise-grade reliability.
+                      Senior engineer with 5+ years building production systems
+                      from kernel-level firmware to web platforms.
+                      <br />&bull;&nbsp; Serial technical builder: architect,
+                      implement, systemize, delegate, scale.
+                      <br />&bull;&nbsp; Currently focused on fintech terminal
+                      infrastructure and mining operations.
+                      <br />&bull;&nbsp; Deep expertise in embedded Linux,
+                      real-time monitoring and cybersecurity.
                     </p>
                     <br />
                     <!-- ABOUT END -->
@@ -116,90 +130,116 @@
                     <!-- EXPERIENCE START -->
                     <h2>EXPERIENCE</h2>
 
-                    <!-- 1 -->
+                    <!-- SKYLABS -->
+                    <h3 class="experience-name">
+                      Senior FullStack &amp; DevSecOps Engineer
+                    </h3>
+                    <div class="job-info">
+                      <h4>
+                        SKYLABS
+                        <span>&nbsp; | &nbsp;</span>
+                        2023 - Present
+                      </h4>
+                    </div>
+                    <p style="margin-bottom: 8px">
+                      <strong>
+                        [ Crypto Terminal Network &mdash; Fintech ]
+                      </strong>
+                      <br />
+                      &bull;&nbsp; Building the largest network of crypto
+                      terminals across Armenia, Georgia and Russia.
+                      <br />&bull;&nbsp; Embedded terminal firmware, backend
+                      services, payment processing and KYC compliance.
+                      <br />&bull;&nbsp; Security hardening of terminal
+                      infrastructure and transaction pipeline.
+                      <br />
+                      <strong>
+                        Skills: C/C++ · JavaScript · Payment Processing ·
+                        KYC/AML · Embedded Systems · DevSecOps
+                      </strong>
+                    </p>
+
+                    <!-- ALPHA ENERGY — MINING INFRA -->
                     <h3 class="experience-name">
                       Mining Infrastructure Engineer
                     </h3>
                     <div class="job-info">
                       <h4>
-                        INTEGRAL ALPHA ENERGY
+                        ALPHA ENERGY
                         <span>&nbsp; | &nbsp;</span>
                         2021 - Present
                       </h4>
                     </div>
                     <p style="margin-bottom: 8px">
                       <strong>
-                        [ Mining Monitoring & Management Systems ]
+                        [ Mining Monitoring &amp; Management Systems ]
                       </strong>
                       <br />
                       &bull;&nbsp; Leading development of Miner Monitoring System
                       (VNISH Support) with 1000+ miners.
-                      <br />&bull;&nbsp; Implementing room management features
-                      with bulk operations and statistics.
-                      <br />&bull;&nbsp; Developing multi-level access control
-                      system with VPN integration.
+                      <br />&bull;&nbsp; Room management with bulk operations,
+                      real-time statistics and alerting.
+                      <br />&bull;&nbsp; Multi-level RBAC with VPN integration
+                      for enterprise clients.
                       <br />
                       <strong>
-                        Skills: C/C++ · JavaScript · API · WebSocket · Real-time
-                        Monitoring
+                        Skills: C/C++ · JavaScript · API · WebSocket ·
+                        Real-time Monitoring · RBAC
                       </strong>
                     </p>
 
-                    <!-- 2 -->
+                    <!-- ALPHA ENERGY — HW TESTING -->
                     <h3 class="experience-name">
-                      Hardware Testing Engineer
+                      Hardware Testing &amp; PCB Engineer
                     </h3>
                     <div class="job-info">
                       <h4>
-                        INTEGRAL ALPHA ENERGY
+                        ALPHA ENERGY
                         <span>&nbsp; | &nbsp;</span>
                         2021 - Present
                       </h4>
                     </div>
                     <p style="margin-bottom: 8px">
                       <strong>
-                        [ ASIC Hashboard Testing & PCB Design ]
+                        [ ASIC Hashboard Testing &amp; PCB Design ]
                       </strong>
                       <br />
-                      &bull;&nbsp; Developing testing solutions for Antminer ASIC
-                      hashboards.
-                      <br />&bull;&nbsp; Designing PCB layouts (54 μm trace
-                      width).
-                      <br />&bull;&nbsp; Transitioning to multi-layer PCB
-                      implementations.
+                      &bull;&nbsp; Automated diagnostic solutions for Antminer
+                      ASIC hashboards.
+                      <br />&bull;&nbsp; PCB layout design (54 μm traces),
+                      transitioning to multi-layer implementations.
                       <br />
                       <strong>
-                        Skills: C/C++ · Hardware Design · I2C · SPI · UART · PCB
-                        Design
+                        Skills: C/C++ · Hardware Design · I2C · SPI · UART ·
+                        PCB Design
                       </strong>
                     </p>
 
-                    <!-- 3 -->
+                    <!-- ALPHA ENERGY — EMBEDDED -->
                     <h3 class="experience-name">
                       Embedded Systems Developer
                     </h3>
                     <div class="job-info">
                       <h4>
-                        INTEGRAL ALPHA ENERGY
+                        ALPHA ENERGY
                         <span>&nbsp; | &nbsp;</span>
                         2021 - Present
                       </h4>
                     </div>
                     <p style="margin-bottom: 8px">
                       <strong>
-                        [ Custom Linux & Kernel Development ]
+                        [ Custom Linux &amp; Kernel Development ]
                       </strong>
                       <br />
-                      &bull;&nbsp; Developing custom Linux distributions for
-                      ARM64 mining controllers.
-                      <br />&bull;&nbsp; Building kernel-level drivers for
-                      specialized interfaces.
-                      <br />&bull;&nbsp; Creating PetaLinux-based web server for
-                      remote configuration.
+                      &bull;&nbsp; Custom Linux distributions for ARM64 mining
+                      controllers.
+                      <br />&bull;&nbsp; Kernel-level drivers for specialized
+                      interfaces. PetaLinux-based web server for remote
+                      configuration.
                       <br />
                       <strong>
-                        Skills: Buildroot · U-Boot · Device Tree · Kernel
-                        Customization · PetaLinux
+                        Skills: Buildroot · U-Boot · Device Tree · Kernel ·
+                        PetaLinux
                       </strong>
                     </p>
 
@@ -214,7 +254,7 @@
                     </h3>
                     <p style="margin-bottom: 8px">
                       &bull;&nbsp; Automated diagnostic solution for ASIC
-                      hashboards. Custom PCB development.
+                      hashboards with custom PCB.
                       <br />
                       <strong>Tech: C/C++, Hardware Design, I2C, SPI, UART</strong>
                     </p>
@@ -224,7 +264,7 @@
                     </h3>
                     <p style="margin-bottom: 8px">
                       &bull;&nbsp; Comprehensive monitoring with real-time
-                      statistics and bulk operations.
+                      statistics and bulk operations for 1000+ devices.
                       <br />
                       <strong>Tech: C/C++, JavaScript, API, WebSocket</strong>
                     </p>
@@ -233,7 +273,8 @@
                       Custom Linux Distro for ARM64
                     </h3>
                     <p style="margin-bottom: 8px">
-                      &bull;&nbsp; Minimal Linux system for ZYNQ SoC boards.
+                      &bull;&nbsp; Minimal Linux system for ZYNQ SoC boards
+                      with remote management.
                       <br />
                       <strong>Tech: Buildroot, U-Boot, Device Tree, Kernel</strong>
                     </p>

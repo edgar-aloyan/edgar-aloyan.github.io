@@ -22,6 +22,21 @@
     <link rel="stylesheet" href="../icons/fa6_1_1/css/all.min.css" />
     <script defer src="../script.js"></script>
     <title>Curriculum Vitae | Roman Aksenov</title>
+    <style>
+      .avatar-roman {
+        margin-right: 1rem;
+        z-index: 200;
+        border-radius: 8px;
+        height: 140px;
+        width: 140px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        box-shadow: 10px 5px 14px #0004;
+        background: url('./avatar.jpg');
+        background-size: cover;
+        background-position: center top;
+      }
+    </style>
   </head>
   <body>
     <div class="cover">
@@ -36,8 +51,9 @@
                     ROMAN
                     <span>AKSENOV</span>
                   </h1>
-                  <h4 class="profession">Python Software Engineer</h4>
+                  <h4 class="profession">TypeScript + Python FullStack Engineer</h4>
                 </div>
+                <div class="avatar-roman"></div>
               </header>
               <section class="pdf-mode-contacts">
                 <div class="pdf-mode-contacts__row">
@@ -58,17 +74,18 @@
                   <div class="skills">
                     <h2>SKILLS</h2>
                     <ul>
-                      <li>FastAPI, Django, SQLAlchemy</li>
+                      <li>TypeScript, React, Vite</li>
+                      <li>Python, FastAPI, Django, SQLAlchemy</li>
                       <li>PostgreSQL, Redis, Celery</li>
                       <li>Kafka, RabbitMQ</li>
                       <li>Docker, Kubernetes, HPA</li>
                       <li>AWS (S3), CI/CD (GitLab)</li>
                       <li>Prometheus, Grafana</li>
-                      <li>mypy, ruff, pylint, black</li>
+                      <li>mypy, ruff, pylint</li>
                       <li>asyncio, aiohttp</li>
                       <li>Payment Processing Integration</li>
                       <li>Microservice Architecture</li>
-                      <li>Data Pipelines & ETL</li>
+                      <li>Data Pipelines &amp; ETL</li>
                     </ul>
                   </div>
 
@@ -77,14 +94,14 @@
                     <section>
                       <div>
                         <h5>Performance</h5>
-                        <p>&bull;&nbsp; &lt;50ms p95 latency</p>
+                        <p>&bull;&nbsp; &lt;50ms p95 API latency</p>
                         <p>&bull;&nbsp; ~100 RPS at peak</p>
                         <p>&bull;&nbsp; 500K+ DAU systems</p>
                       </div>
                       <div>
                         <h5>Reliability</h5>
                         <p>&bull;&nbsp; 99.9% payment success rate</p>
-                        <p>&bull;&nbsp; >95% test coverage</p>
+                        <p>&bull;&nbsp; &gt;95% test coverage</p>
                         <p>&bull;&nbsp; Zero-downtime deployments</p>
                       </div>
                       <div>
@@ -116,14 +133,13 @@
                     <!-- ABOUT START -->
                     <h2>ABOUT</h2>
                     <p>
-                      Python Software Engineer with 4+ years of
-                      experience building high-load backend systems.
-                      <br />&bull;&nbsp; Specialized in microservice
-                      architectures, payment processing and data
-                      pipelines.
-                      <br />&bull;&nbsp; Proven track record in
-                      fintech-adjacent systems handling 500K+ DAU and
-                      10M+ daily records.
+                      TypeScript + Python FullStack Engineer with 4+ years
+                      building high-load systems end-to-end.
+                      <br />&bull;&nbsp; Frontend (React/TypeScript) + Backend
+                      (FastAPI/Django) + Infrastructure (K8s/Docker).
+                      <br />&bull;&nbsp; Proven track record in payment
+                      processing, data pipelines and enterprise platforms
+                      serving 500K+ DAU.
                       <br />&bull;&nbsp; Strong focus on reliability,
                       observability and CI/CD automation.
                     </p>
@@ -133,9 +149,9 @@
                     <!-- EXPERIENCE START -->
                     <h2>EXPERIENCE</h2>
 
-                    <!-- 1 -->
+                    <!-- PARIMATCH -->
                     <h3 class="experience-name">
-                      Python Software Engineer
+                      FullStack Engineer (TypeScript/Python)
                     </h3>
                     <div class="job-info">
                       <h4>
@@ -146,46 +162,49 @@
                     </div>
                     <p style="margin-bottom: 8px">
                       <strong>
-                        [ Internal Product & Payment Systems ]
+                        [ Internal Platform — Operations, Payments, Reporting ]
                       </strong>
                       <br />
-                      &bull;&nbsp; Architected microservice ecosystem
-                      with Kafka for ManageBac integration, handling
-                      ~100 RPS at peak with 1K+ DAU.
-                      <br />&bull;&nbsp; Built FastAPI microservices
-                      achieving &lt;50ms p95 latency with &gt;95% test
-                      coverage.
-                      <br />&bull;&nbsp; Integrated payment processing
-                      system via REST API and Kafka events with 99.9%
-                      success rate.
+                      &bull;&nbsp; Built React/TypeScript interfaces for
+                      internal operations, improving workflow speed and
+                      reducing manual steps.
+                      <br />&bull;&nbsp; Delivered FastAPI services and
+                      PostgreSQL schemas for core workflows, keeping p95
+                      API latency below 50ms.
+                      <br />&bull;&nbsp; Developed TypeScript automation
+                      scripts and Python integrations with Kafka and REST
+                      APIs for attendance and payment flows.
+                      <br />&bull;&nbsp; Integrated payment processing system
+                      via REST API and Kafka events with 99.9% success rate.
+                      <br />&bull;&nbsp; Strengthened CI/CD quality gates
+                      (mypy, ruff, linting), reducing deployment failures
+                      by 35%.
+                      <br />&bull;&nbsp; Implemented Celery/Redis reporting
+                      pipelines with S3 storage, 2K+ reports/month in
+                      Docker/Kubernetes.
                       <br />&bull;&nbsp; Deployed and scaled services in
-                      Kubernetes cluster with HPA, zero-downtime.
-                      <br />&bull;&nbsp; Configured Prometheus metrics
-                      with custom Grafana dashboards monitoring SLA,
-                      latency and error rates.
-                      <br />&bull;&nbsp; Built Telegram bot processing
-                      500+ daily transactions.
+                      Kubernetes with HPA, zero-downtime.
                       <br />
                       <strong>
-                        Skills: FastAPI · Kafka · PostgreSQL · Docker ·
-                        Kubernetes · Celery · Redis · AWS S3 · CI/CD
+                        Skills: TypeScript · React · FastAPI · Kafka ·
+                        PostgreSQL · Docker · Kubernetes · Redis · AWS · CI/CD
                       </strong>
                     </p>
 
-                    <!-- 2 -->
+                    <!-- TENSOR -->
                     <h3 class="experience-name">
-                      Python Backend Engineer
+                      Backend Engineer (Python)
                     </h3>
                     <div class="job-info">
                       <h4>
                         TENSOR COMPANY
                         <span>&nbsp; | &nbsp;</span>
-                        Jan 2022 - Aug 2023 · 1 yr 8 mos
+                        Jan 2022 - Aug 2023
                       </h4>
                     </div>
                     <p style="margin-bottom: 8px">
                       <strong>
-                        [ Taxpayer Portal & Data Pipelines ]
+                        [ Taxpayer Portal — 500K+ DAU ]
                       </strong>
                       <br />
                       &bull;&nbsp; Developed Django modules for SBIS3
@@ -197,9 +216,8 @@
                       10M+ tax records daily with &lt;0.1% error rate.
                       <br />&bull;&nbsp; Implemented Redis caching layer,
                       decreasing DB load by 40% during peak hours.
-                      <br />&bull;&nbsp; Migrated codebase from Python
-                      3.7 to 3.9 with asyncio patterns for 25%
-                      throughput increase.
+                      <br />&bull;&nbsp; Migrated from Python 3.7 to 3.9
+                      with asyncio patterns for 25% throughput increase.
                       <br />
                       <strong>
                         Skills: Django · PostgreSQL · Kafka · Docker ·
@@ -208,7 +226,6 @@
                     </p>
 
                     <!-- EXPERIENCE END -->
-
                     <br />
                   </div>
                 </div>
