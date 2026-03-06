@@ -204,7 +204,7 @@ header {
   font-size: 1.2rem;
   color: #ffffff;
   background-color: var(--primary-color);
-
+  letter-spacing: 0.1rem;
   line-height: 1.5em;
 }
 
