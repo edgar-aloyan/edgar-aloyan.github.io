@@ -9,7 +9,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link id="dark-css" rel="stylesheet" href="dark.css" />
-    <link id="pdf-mode-css" rel="stylesheet" href="pdf-mode.css" disabled />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway"
       rel="stylesheet"
@@ -20,294 +19,250 @@
     />
     <link rel="icon" type="image/png" href="./favicon_blue.png" />
     <link rel="stylesheet" href="./icons/fa6_1_1/css/all.min.css" />
-    <script defer src="./script.js"></script>
-    <title>Curriculum Vitae | Edgar Aloyan</title>
+    <title>Team</title>
+    <style>
+      html {
+        background-color: #111;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Helvetica Neue', sans-serif;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 2rem;
+      }
+
+      .team-header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+      .team-header h1 {
+        font-size: 2.4rem;
+        font-weight: 300;
+        letter-spacing: 0.5rem;
+        color: #eee;
+        margin-bottom: 0.8rem;
+      }
+      .team-header h1 strong {
+        font-weight: 700;
+        color: #fff;
+      }
+      .team-header p {
+        color: #888;
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+        max-width: 1100px;
+        width: 100%;
+      }
+
+      .card {
+        background: #1a1a1d;
+        border: 1px solid #2a2a2d;
+        border-radius: 12px;
+        padding: 2.5rem 2rem 2rem;
+        text-align: center;
+        transition: transform 200ms, border-color 200ms;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        border-color: #556;
+      }
+
+      .card-avatar {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+        border: 2px solid #333;
+      }
+
+      .card h2 {
+        color: #eee;
+        font-size: 1.15rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.3rem;
+      }
+      .card h3 {
+        color: #98c;
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        margin-bottom: 1rem;
+      }
+      .card p {
+        color: #777;
+        font-size: 0.78rem;
+        line-height: 1.5;
+        margin-bottom: 1.2rem;
+      }
+
+      .card-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+      }
+      .card-tags span {
+        background: #2a2a2d;
+        color: #aaa;
+        font-size: 0.65rem;
+        padding: 0.25rem 0.6rem;
+        border-radius: 100px;
+        letter-spacing: 0.03rem;
+      }
+
+      .card-link {
+        color: #98c;
+        font-size: 0.8rem;
+        text-decoration: none;
+        letter-spacing: 0.05rem;
+        margin-top: auto;
+        padding: 0.4rem 1.2rem;
+        border: 1px solid #334;
+        border-radius: 100px;
+        transition: background 200ms, color 200ms;
+      }
+      .card-link:hover {
+        background: #98c;
+        color: #111;
+      }
+
+      .team-footer {
+        margin-top: 4rem;
+        text-align: center;
+      }
+      .team-footer p {
+        color: #555;
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+      }
+      .team-footer a {
+        color: #98c;
+        text-decoration: none;
+      }
+
+      @media (max-width: 900px) {
+        .team-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 500px) {
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="cover">
-      <div class="a4-grid">
-        <div class="left"></div>
-        <div class="middle">
-          <a
-            id="download"
-            href="./download/EDGAR_ALOYAN_CS_ENGINEER.pdf"
-            download="EDGAR_ALOYAN_CS_ENGINEER"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="{2}"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              /></svg
-            ><span>Download PDF</span></a
-          >
-          <div class="a4">
-            <div class="wrapper">
-              <header>
-                <div class="title">
-                  <h1 class="full-name">
-                    EDGAR
-                    <span>ALOYAN</span>
-                  </h1>
-                  <h4 class="profession">Senior DevSecOps & FullStack Engineer</h4>
-                </div>
-                <div class="avatar" />
-              </header>
-              <section class="pdf-mode-contacts">
-                <div
-                  class="pdf-mode-contacts__row cursor-pointer"
-                  onclick="window.open(this.textContent)"
-                >
-                  <i class="fa-solid fa-link-simple fa-xs"></i>
-                  <div>https://linkedin.com/in/edgar-aloyan</div>
-                </div>
-                <div class="pdf-mode-contacts__row">
-                  <i class="fa-regular fa-envelope"></i>
-                  <div>aloyan93@gmail.com</div>
-                </div>
-                <div class="pdf-mode-contacts__row">
-                  <i class="fa-regular fa-phone"></i>
-                  <div>+374 55 42 62 95</div>
-                </div>
-              </section>
-              <div class="content-wrapper">
-                <aside>
-                  <div class="skills">
-                    <h2>SKILLS</h2>
-                    <ul>
-                      <li>Payment Processing, KYC/AML, Transactions</li>
-                      <li>Cybersecurity, RBAC, Penetration Testing</li>
-                      <li>Python, JavaScript, C/C++, Bash, Assembler</li>
-                      <li>FastAPI, Django, Node.js</li>
-                      <li>PostgreSQL, Redis, Kafka, ELK Stack</li>
-                      <li>OLTP, OLAP, ETL, Data Warehousing</li>
-                      <li>GCP, Docker, Kubernetes, NGINX</li>
-                      <li>HW/SW Firewalls, VPN, IPSec, Wireshark</li>
-                      <li>Linux, BSD, RTOS, Embedded Systems</li>
-                      <li>AI-Native Development (Claude Code, MCP, RAG)</li>
-                      <li>CI/CD, GitLab, GitHub, JIRA, Linear</li>
-                      <li>
-                        Certified by MikroTik, Cisco, HikVision, TP-Link
-                      </li>
-                    </ul>
-                  </div>
-                  <h2>EDUCATION</h2>
-                  <div class="education">
-                    <section>
-                      <div>
-                        <h5>
-                          Krasnodar College of <br />Electronic Instrumentation
-                        </h5>
-                        <h6>Computer Science Engineering</h6>
-                        <p>&bull;&nbsp; FGOS 09.02.01 Honors Diploma</p>
-                        <h6>2014 - 2018</h6>
-                      </div>
-                      <div>
-                        <h5>CISCO: IT Essentials</h5>
-                        <h6>Network and Security Engineering</h6>
-                        <p>&bull;&nbsp; CompTIA A+ Certification</p>
-                        <h6>2015 - 2016</h6>
-                      </div>
-                      <div>
-                        <h5>WorldSkills Russian National Team</h5>
-                        <h6>Electronic Prototyping</h6>
-                        <p>&bull;&nbsp; EurAsia Cup Champion of 2018</p>
-                        <h6>2016 - 2018</h6>
-                      </div>
-                      <div>
-                        <h5>Gestalt Institute of St. Petersburg</h5>
-                        <h6>Organizational Psychotherapy</h6>
-                        <p>
-                          &bull;&nbsp; Staff Leadership, Conflict Management
-                        </p>
-                        <p>
-                          &bull;&nbsp; Behavioral Patterns in Decision-Making
-                        </p>
-                        <h6>2018 - 2021</h6>
-                      </div>
-                    </section>
-                  </div>
-                </aside>
-                <div class="content">
-                  <div class="experience">
-                    <!-- ABOUT START -->
-                    <h2>ABOUT</h2>
-                    <p>
-                      Senior engineer with 8+ years building production systems
-                      from embedded hardware to cloud infrastructure.
-                      <br />&bull;&nbsp; Serial technical leader: build,
-                      systemize, hire, delegate, scale.
-                      <br />&bull;&nbsp; Currently focused on fintech
-                      infrastructure and AI-native development.
-                      <br />&bull;&nbsp; EurAsia Champion 2018 in Electronics.
-                      Honors Diploma in CS.
-                      <br />&bull;&nbsp; Armenian, English: Intermediate,
-                      Russian: Native
-                    </p>
-                    <br />
-                    <!-- ABOUT END -->
 
-                    <!-- EXPERIENCE START -->
-                    <h2>EXPERIENCE</h2>
+    <div class="team-header">
+      <h1>THE <strong>TEAM</strong></h1>
+      <p>DevSecOps &middot; FullStack &middot; Fintech &middot; AI-Native</p>
+    </div>
 
-                    <!-- SKYLABS -->
-                    <h3 class="experience-name">
-                      Senior FullStack & DevSecOps Engineer
-                    </h3>
-                    <div class="job-info">
-                      <h4>
-                        SKYLABS
-                        <span>&nbsp; | &nbsp;</span>
-                        2023 - Present
-                      </h4>
-                    </div>
-                    <p style="margin-bottom: 8px">
-                      <strong>
-                        [ Crypto Terminal Network &mdash; Fintech ]
-                      </strong>
-                      <br />
-                      &bull;&nbsp; Building and maintaining the largest network
-                      of crypto terminals across Armenia, Georgia and Russia.
-                      <br />&bull;&nbsp; Full-stack development from terminal
-                      embedded software to web platform and operations dashboard.
-                      <br />&bull;&nbsp; Payment processing, KYC compliance,
-                      transaction security and real-time monitoring.
-                      <br />&bull;&nbsp; End-to-end responsibility: hardware,
-                      backend, frontend, infrastructure, security.
-                      <br />
-                      <strong>
-                        Skills: Python · JavaScript · PostgreSQL · Redis ·
-                        Payment Processing · KYC/AML · DevSecOps
-                      </strong>
-                    </p>
+    <div class="team-grid">
 
-                    <!-- ALPHA ENERGY -->
-                    <h3 class="experience-name">
-                      Senior Infrastructure & DevSecOps Engineer
-                    </h3>
-                    <div class="job-info">
-                      <h4>
-                        ALPHA ENERGY
-                        <span>&nbsp; | &nbsp;</span>
-                        2021 - Present
-                      </h4>
-                    </div>
-                    <p style="margin-bottom: 8px">
-                      <strong>
-                        [ Cryptocurrency Mining Infrastructure ]
-                      </strong>
-                      <br />
-                      &bull;&nbsp; Monitoring and management systems for 1000+
-                      ASIC miners with real-time dashboards.
-                      <br />&bull;&nbsp; Multi-level RBAC with VPN integration
-                      for enterprise clients.
-                      <br />&bull;&nbsp; ASIC repair diagnostics, custom
-                      firmware, infrastructure automation.
-                      <br />
-                      <strong>
-                        Skills: Linux · Monitoring · RBAC · VPN · Docker ·
-                        Network Engineering · IoT
-                      </strong>
-                    </p>
-
-                    <!-- HITECH -->
-                    <h3 class="experience-name">
-                      Cybersecurity Engineer &mdash; CTO
-                    </h3>
-                    <div class="job-info">
-                      <h4>
-                        HITECH LLC
-                        <span>&nbsp; | &nbsp;</span>
-                        May 2022 - Present
-                      </h4>
-                    </div>
-                    <p style="margin-bottom: 8px">
-                      <strong>
-                        [ Security, Privacy &amp; Intelligence ]
-                      </strong>
-                      <br />
-                      &bull;&nbsp; Security-oriented IT infrastructure for
-                      governments, enterprises and high-risk clients.
-                      <br />&bull;&nbsp; Privacy solutions from
-                      telecommunications to custom IoT systems.
-                      <br />
-                      <strong>
-                        Skills: HW/SW Firewalls · VPN · IPSec · Wireshark ·
-                        Cyber Security · Cryptography
-                      </strong>
-                    </p>
-
-                    <!-- KAVKAZ EXPRESS -->
-                    <h3 class="experience-name">
-                      Computer Science Engineer &mdash; CIO
-                    </h3>
-                    <div class="job-info">
-                      <h4>
-                        KAVKAZ EXPRESS LLC
-                        <span>&nbsp; | &nbsp;</span>
-                        Jan 2021 - Feb 2022
-                      </h4>
-                    </div>
-                    <p style="margin-bottom: 8px">
-                      <strong> [ US Multimodal Logistics ] </strong>
-                      <br />
-                      &bull;&nbsp; Built ERP system from scratch with
-                      OLTP/OLAP/ETL databases, automated Data-Lake &amp;
-                      Data-Warehouse.
-                      <br />&bull;&nbsp; Formed and led IT department
-                      (Scrum/Kanban). Digitalized business processes with
-                      automated weekly auditing.
-                      <br />
-                      <strong>
-                        Skills: GCP · SQL · Redis · Python · Django · System
-                        Design · Mentorship
-                      </strong>
-                    </p>
-
-                    <!-- UFO-PACK -->
-                    <h3 class="experience-name">
-                      Computer Science Engineer
-                    </h3>
-                    <div class="job-info">
-                      <h4>
-                        UFO-PACK LLC
-                        <span>&nbsp; | &nbsp;</span>
-                        Oct 2017 - Jan 2021
-                      </h4>
-                    </div>
-                    <p style="margin-bottom: 8px">
-                      <strong>
-                        [ Heavy Machinery Manufacturing ]
-                      </strong>
-                      <br />
-                      &bull;&nbsp; Embedded APCS for manufacturing. Assembler,
-                      C, C++ for SoC. Embedded Linux, RTOS.
-                      <br />&bull;&nbsp; IEC 61131-3 for HMI/PLC. Electrical
-                      circuit engineering for industrial machines.
-                      <br />
-                      <strong>
-                        Skills: Assembler · C/C++ · Embedded Linux · RTOS ·
-                        IEC 61131-3
-                      </strong>
-                    </p>
-
-                    <!-- EXPERIENCE END -->
-                    <br />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- EDGAR -->
+      <div class="card">
+        <img class="card-avatar" src="./img/avatarShot2.jpeg" alt="Edgar Aloyan" />
+        <h2>EDGAR ALOYAN</h2>
+        <h3>Senior DevSecOps & FullStack</h3>
+        <p>
+          8+ years. Fintech infra, cybersecurity, AI-native dev.
+          Serial technical leader: build, systemize, delegate, scale.
+        </p>
+        <div class="card-tags">
+          <span>Fintech</span>
+          <span>KYC/AML</span>
+          <span>DevSecOps</span>
+          <span>Python</span>
+          <span>Claude MCP</span>
         </div>
-        <div class="right"></div>
+        <a class="card-link" href="./edgar-aloyan/">CV &rarr;</a>
       </div>
 
-      <footer></footer>
+      <!-- AVETIS -->
+      <div class="card">
+        <img class="card-avatar" src="./avetis-chabyan/avatar.jpg" alt="Avetis Chabyan" />
+        <h2>AVETIS CHABYAN</h2>
+        <h3>Senior DevSecOps & Embedded</h3>
+        <p>
+          5+ years. From kernel firmware to web platforms.
+          Monitoring 1000+ devices, RBAC, custom Linux distros.
+        </p>
+        <div class="card-tags">
+          <span>Embedded</span>
+          <span>Linux Kernel</span>
+          <span>C/C++</span>
+          <span>Security</span>
+          <span>PCB Design</span>
+        </div>
+        <a class="card-link" href="./avetis-chabyan/">CV &rarr;</a>
+      </div>
+
+      <!-- KONSTANTIN -->
+      <div class="card">
+        <img class="card-avatar" src="./konstantin-orlov/avatar.jpg" alt="Konstantin Orlov" />
+        <h2>KONSTANTIN ORLOV</h2>
+        <h3>UI/UX Designer & PM</h3>
+        <p>
+          4+ years. QA roots, design mind, PM execution.
+          One person covering three roles with engineering context.
+        </p>
+        <div class="card-tags">
+          <span>UI/UX</span>
+          <span>Figma</span>
+          <span>Project Management</span>
+          <span>QA</span>
+          <span>Agile</span>
+        </div>
+        <a class="card-link" href="./konstantin-orlov/">CV &rarr;</a>
+      </div>
+
+      <!-- ROMAN -->
+      <div class="card">
+        <img class="card-avatar" src="./roman-aksenov/avatar.jpg" alt="Roman Aksenov" />
+        <h2>ROMAN AKSENOV</h2>
+        <h3>FullStack TypeScript + Python</h3>
+        <p>
+          4+ years. Payment processing, high-load backends,
+          React frontends. 500K+ DAU, 10M+ records/day.
+        </p>
+        <div class="card-tags">
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>FastAPI</span>
+          <span>Kafka</span>
+          <span>Kubernetes</span>
+        </div>
+        <a class="card-link" href="./roman-aksenov/">CV &rarr;</a>
+      </div>
+
     </div>
+
+    <div class="team-footer">
+      <p>Yerevan, Armenia &middot; Cyprus &middot; Remote-first</p>
+    </div>
+
   </body>
 </html>
